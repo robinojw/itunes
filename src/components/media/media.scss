@@ -1,0 +1,39 @@
+@import '../../scss/variables';
+
+.media {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-15px);
+  }
+
+  p {
+    margin: 0;
+    max-width: 300px;
+    overflow-x: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .collection-name {
+    font-weight: $bold;
+    margin: 15px 0 5px;
+  }
+
+  .artist {
+    color: $grey-light;
+  }
+
+  picture,
+  img {
+    border-radius: 8px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+}

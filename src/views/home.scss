@@ -1,0 +1,44 @@
+@import '../scss/variables';
+
+.home {
+  max-width: $max-width-desktop;
+  margin: 0 auto;
+
+  .title-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    width: 100%;
+
+    .main-title {
+      font: $bold $title-lg $IBM-font;
+    }
+  }
+
+  .media-list {
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
+  text-align: center;
+
+  .message {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+}

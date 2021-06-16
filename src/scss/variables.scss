@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+// units/modifiers
+$max-width-desktop: 1000px;
+$desktop-padding: 0 40px;
+
+// typography
+$bold: 700;
+$IBM-font: 'IBM Plex Mono', monospace;
+$title-lg: 56px;
+$caption: 12px;
+
+// colours
+$grey-light: #a3a2a2;
+
+html {
+  font-family: $IBM-font;
+}

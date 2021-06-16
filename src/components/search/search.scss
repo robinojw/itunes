@@ -1,0 +1,29 @@
+@import '../../scss/variables';
+
+.search-bar {
+  height: 40px;
+  max-width: 600px;
+  width: 100%;
+
+  input {
+    border-radius: 10px;
+    border: 1px solid $grey-light;
+    padding: 0 10px;
+  }
+
+  .helper-text {
+    color: $grey-light;
+    display: none;
+    font-size: $caption;
+    margin-top: 10px;
+
+    .enter-text {
+      color: black;
+      margin-top: 3px;
+    }
+  }
+
+  .show-helper {
+    display: block;
+  }
+}
