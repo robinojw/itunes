@@ -29,7 +29,9 @@ export default class Search extends Vue {
     helper: HTMLElement;
   };
   focused = false;
-  inputValue: string = window.location.pathname.replace('/', '');
+  inputValue: string = window.location.pathname
+    .replace('/', '')
+    .replaceAll('+', ' ');
 
   toggleInput() {
     this.$refs.helper.classList.toggle(HELPER_TEXT);
@@ -55,7 +57,7 @@ export default class Search extends Vue {
       window.location.pathname != `/${this.inputValue}`
     ) {
       const [media, query] = this.inputValue.split('/');
-      this.$router.push(`/${this.inputValue}`);
+      this.$router.push(`/${this.inputValue.replaceAll(/\s/g, '+')}`);
       this.$emit('update-resource', media, query);
       window.removeEventListener('keydown', this.searchMedia);
     }
