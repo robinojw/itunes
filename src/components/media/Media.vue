@@ -20,10 +20,10 @@
 
 <script lang="ts">
 import './media.scss';
-import { Result } from '@/utils/media_content';
-import { Component, Prop, Vue } from 'vue-property-decorator';
-@Component
-export default class Media extends Vue {
-  @Prop() result: Array<Result> = [];
-}
+import { Vue } from 'vue-property-decorator';
+export default Vue.extend({
+  props: {
+    result: {}
+  }
+});
 </script>

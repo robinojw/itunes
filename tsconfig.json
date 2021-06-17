@@ -11,7 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": ["jest"],
+    "types": ["webpack-env", "node", "jest"],
     "paths": {
       "@/*": ["src/*"]
     },
@@ -20,9 +20,9 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "server/**/*.ts",
     "src/**/*.vue",
-    "tests/**/*.ts"
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
   ],
   "exclude": ["node_modules", "dist"]
 }

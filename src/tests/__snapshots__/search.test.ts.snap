@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mounted App renders search component correctly 1`] = `
+<div
+  class="search-bar"
+>
+  <input
+    class="search-bar"
+    placeholder="Search"
+    type="text"
+  />
+   
+  <div
+    class="helper-text"
+  >
+    
+    blank search media with the format media/artist i.e album/oasis
+    
+    <p
+      class="enter-text"
+    >
+      press enter...
+    </p>
+  </div>
+</div>
+`;

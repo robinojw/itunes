@@ -18,22 +18,20 @@
     "moduleFileExtensions": [
       "js",
       "ts",
-      "json",
       "vue"
     ],
+    "preset": "ts-jest",
     "transform": {
+      "^.+\\.ts?$": "ts-jest",
       ".*\\.(vue)$": "vue-jest",
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "testURL": "http://localhost/"
+      ".+\\.(css|styl|less|sass|scss|png|jpg|svg|ttf|woff|woff2)$": "jest-transform-stub"
+    }
   },
   "dependencies": {
     "@vue/cli-plugin-unit-jest": "^4.5.13",
     "@vue/test-utils": "^1.2.1",
     "axios": "^0.21.1",
     "babel-jest": "^27.0.2",
-    "body-parser": "^1.19.0",
     "chalk": "^4.1.1",
     "core-js": "^3.6.4",
     "cors": "^2.8.5",
@@ -66,10 +64,12 @@
     "@vue/cli-service": "^4.5.13",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-core": "^7.0.0-bridge.0",
     "concurrently": "^5.1.0",
     "eslint": "^7.7.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-beta.2",
+    "jsdom-global": "^3.0.2",
     "nodemon": "^2.0.4",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
