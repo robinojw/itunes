@@ -24,3 +24,28 @@ exports[`Mounted App renders search component correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Mounted Search renders search component correctly 1`] = `
+<div
+  class="search-bar"
+>
+  <input
+    class="search-bar"
+    placeholder="Search"
+    type="text"
+  />
+   
+  <div
+    class="helper-text"
+  >
+    
+    lank search media with the format media/artist i.e album/oasis
+    
+    <p
+      class="enter-text"
+    >
+      press enter...
+    </p>
+  </div>
+</div>
+`;

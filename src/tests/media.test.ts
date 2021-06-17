@@ -12,7 +12,7 @@ MOCK_RESULT.collectionName = "(What's the Story) Morning Glory?";
 MOCK_RESULT.collectionViewUrl =
   'https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f1/91/ef/f191effe-4cf2-932b-f2cf-a724454d2d49/source/100x100bb.jpg';
 
-describe('Mounted App', () => {
+describe('Mounted Media', () => {
   const wrapper = mount(Media, {
     propsData: {
       result: MOCK_RESULT

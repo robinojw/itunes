@@ -5,7 +5,7 @@ import Search from '../components/search/Search.vue';
 
 const UPDATE_EVENT = 'update-resource';
 
-describe('Mounted App', () => {
+describe('Mounted Search', () => {
   const wrapper = mount(Search);
 
   test('is a Vue instance', () => {

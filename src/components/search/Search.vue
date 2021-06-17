@@ -30,8 +30,8 @@ export default class Search extends Vue {
   };
   focused = false;
   inputValue: string = window.location.pathname
-    .replace('/', '')
-    .replaceAll('+', ' ');
+    .slice(1)
+    .replace(/[^a-zA-Z/]/g, ' ');
 
   toggleInput() {
     this.$refs.helper.classList.toggle(HELPER_TEXT);
@@ -57,7 +57,8 @@ export default class Search extends Vue {
       window.location.pathname != `/${this.inputValue}`
     ) {
       const [media, query] = this.inputValue.split('/');
-      this.$router.push(`/${this.inputValue.replaceAll(/\s/g, '+')}`);
+      const value = this.inputValue.replace(/[^a-zA-Z/]/g, '+');
+      this.$router.push(`/${value}`);
       this.$emit('update-resource', media, query);
       window.removeEventListener('keydown', this.searchMedia);
     }

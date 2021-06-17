@@ -102,6 +102,40 @@ exports[`Mounted Media Component 1`] = `
 </a>
 `;
 
+exports[`Mounted Media renders media component correctly 1`] = `
+<a
+  class="media"
+  href="https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f1/91/ef/f191effe-4cf2-932b-f2cf-a724454d2d49/source/100x100bb.jpg"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <picture>
+    <source
+      srcset="https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f1/91/ef/f191effe-4cf2-932b-f2cf-a724454d2d49/source/100x100bb.jpg"
+      type="image/jpeg"
+    />
+     
+    <img
+      alt="Oasis"
+      loading="lazy"
+      src="https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f1/91/ef/f191effe-4cf2-932b-f2cf-a724454d2d49/source/100x100bb.jpg"
+    />
+  </picture>
+   
+  <p
+    class="collection-name"
+  >
+    (What's the Story) Morning Glory?
+  </p>
+   
+  <p
+    class="artist"
+  >
+    Oasis
+  </p>
+</a>
+`;
+
 exports[`renders media component correctly 1`] = `
 <a
   class="media"
