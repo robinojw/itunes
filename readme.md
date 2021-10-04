@@ -1,6 +1,4 @@
-## HP Technical Test
-
-Hi, thank you for taking the time to read through my technical test.<br>
+## Vue iTunes clone
 
 Stack:<br>
 `Vue`<br/>
